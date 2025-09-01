@@ -65,11 +65,11 @@ func fetchFreeOutfitSuggestion(from weatherSummary: String, completion: @escapin
 func fetchOutfitSuggestion(from weatherSummary: String, completion: @escaping (OutfitDetails) -> Void) {
     let prompt = "Based on this weather: \(weatherSummary), what outfit would you recommend? Respond in a fun and stylish tone like 'It’s a trench and sneakers kind of day.'. give me this type of response: {\"title\": \"It’s a trench and sneakers kind of day\", \"extraTip\":\"Bring an umbrela\", \"secondTip\":\"You might want a hoodie under\",\"shortWeatherInfo\":\"Mostly cloudy, breezy\", \"fashionType\":\"trench_outfit\"}. For fashionType plese select one from this list: [trench_outfit, summer_dress, coat_outfit, hoodie_outfit,tshirt_jeans_outfit, tshirt_shorts_outfit]"
 
-    let apiKey = "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"
+//    let apiKey = "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"
     let url = URL(string: "https://api.openai.com/v1/chat/completions")!
     var request = URLRequest(url: url)
     request.httpMethod = "POST"
-    request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
+   // request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
     let body: [String: Any] = [
