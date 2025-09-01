@@ -1,0 +1,42 @@
+{
+  "outfits": {
+    "female_casual_coat_outfit": {
+      "title": "Layer up smart — it’s cool but comfy today.",
+      "updatedAt": { ".sv": "timestamp" },
+      "shopItems": {
+        "item1": {
+          "title": "Cozy Knit Sweater",
+          "price": 49.0,
+          "brand": "Uniqlo",
+          "imageUrl": "https://your-cdn.com/sweater.png",
+          "deeplink": "https://uniqlo.com/product/sweater",
+          "sort": 0
+        },
+        "item2": {
+          "title": "Straight Jeans",
+          "price": 59.0,
+          "brand": "Levi’s",
+          "imageUrl": "https://your-cdn.com/jeans.png",
+          "deeplink": "https://levi.com/product/jeans",
+          "sort": 1
+        },
+        "item3": {
+          "title": "Casual Sneakers",
+          "price": 75.0,
+          "brand": "Adidas",
+          "imageUrl": "https://your-cdn.com/sneakers.png",
+          "deeplink": "https://adidas.com/product/sneakers",
+          "sort": 2
+        },
+        "item4": {
+          "title": "Crossbody Bag",
+          "price": 39.0,
+          "brand": "Mango",
+          "imageUrl": "https://your-cdn.com/bag.png",
+          "deeplink": "https://shop.mango.com/product/bag",
+          "sort": 3
+        }
+      }
+    }
+  }
+}

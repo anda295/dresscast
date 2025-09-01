@@ -11,6 +11,38 @@
 		210A06A22DCCDA290036D542 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210A06A12DCCDA290036D542 /* ContentView.swift */; };
 		210A06A42DCCDA2D0036D542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210A06A32DCCDA2D0036D542 /* Assets.xcassets */; };
 		210A06A72DCCDA2D0036D542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210A06A62DCCDA2D0036D542 /* Preview Assets.xcassets */; };
+		210A06AE2DCCDA670036D542 /* ForcastFitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210A06AD2DCCDA670036D542 /* ForcastFitView.swift */; };
+		210A06B02DCCDA900036D542 /* SuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210A06AF2DCCDA900036D542 /* SuggestionView.swift */; };
+		210A06B22DCE23C00036D542 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210A06B12DCE23C00036D542 /* LocationManager.swift */; };
+		210A06B42DCE24030036D542 /* OpenAiWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210A06B32DCE24030036D542 /* OpenAiWeather.swift */; };
+		212DB56E2E5DD07E0081E9A8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 212DB56D2E5DD07E0081E9A8 /* FirebaseAuth */; };
+		212DB5702E5DD07E0081E9A8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 212DB56F2E5DD07E0081E9A8 /* FirebaseFirestore */; };
+		212DB5722E5DD07E0081E9A8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 212DB5712E5DD07E0081E9A8 /* FirebaseFirestoreSwift */; };
+		212DB5742E5DD07E0081E9A8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 212DB5732E5DD07E0081E9A8 /* FirebaseStorage */; };
+		212DB5772E5DD3470081E9A8 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 212DB5762E5DD3470081E9A8 /* GoogleMobileAds */; };
+		212DFC102E44BEC8008FFEF7 /* DressCastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212DFC0F2E44BEC8008FFEF7 /* DressCastView.swift */; };
+		2142FA682E40C5D900CA79EB /* OutfitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2142FA672E40C5D900CA79EB /* OutfitService.swift */; };
+		2142FA6A2E40C93400CA79EB /* FreeWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2142FA692E40C93400CA79EB /* FreeWeatherService.swift */; };
+		2142FA6C2E421D1C00CA79EB /* SeedGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2142FA6B2E421D1C00CA79EB /* SeedGenerator.swift */; };
+		215BC3492E65B2460077CF37 /* BannerAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215BC3482E65B2460077CF37 /* BannerAdView.swift */; };
+		2160E2D72E435C2D0067730C /* PreferenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160E2D62E435C2C0067730C /* PreferenceModel.swift */; };
+		2160E2D92E435C550067730C /* OnBoardigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160E2D82E435C550067730C /* OnBoardigView.swift */; };
+		2160E2DB2E4361030067730C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160E2DA2E4361030067730C /* SettingsView.swift */; };
+		21BDCBA32DD7536000B3BF39 /* LocationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BDCBA22DD7536000B3BF39 /* LocationSearchViewModel.swift */; };
+		21BDCBA52DD7539100B3BF39 /* LocationSearchSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BDCBA42DD7539100B3BF39 /* LocationSearchSheet.swift */; };
+		21BDCBA72DD75B7300B3BF39 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BDCBA62DD75B7300B3BF39 /* WeatherService.swift */; };
+		21C304592E4A01F8002ECB51 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C304582E4A01F8002ECB51 /* ShareSheet.swift */; };
+		21C3045B2E4A265A002ECB51 /* ShareableForcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C3045A2E4A265A002ECB51 /* ShareableForcastView.swift */; };
+		21C3045D2E4B5D20002ECB51 /* ShareOutfitStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C3045C2E4B5D20002ECB51 /* ShareOutfitStoryView.swift */; };
+		21C3045F2E4CA198002ECB51 /* BrandColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C3045E2E4CA198002ECB51 /* BrandColors.swift */; };
+		21C304632E54972A002ECB51 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C304622E54972A002ECB51 /* Service.swift */; };
+		21C304652E5502EE002ECB51 /* ShopItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C304642E5502EE002ECB51 /* ShopItemView.swift */; };
+		21C304672E55E32B002ECB51 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C304662E55E32B002ECB51 /* Models.swift */; };
+		21C304692E55E389002ECB51 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C304682E55E389002ECB51 /* FirestoreService.swift */; };
+		21C3046B2E55E3C1002ECB51 /* ShopTheLookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C3046A2E55E3C1002ECB51 /* ShopTheLookViewModel.swift */; };
+		21C3046D2E55E40E002ECB51 /* RemoteShopCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C3046C2E55E40E002ECB51 /* RemoteShopCardView.swift */; };
+		21C3046F2E55E44B002ECB51 /* ShopTheLookRemoteSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C3046E2E55E44B002ECB51 /* ShopTheLookRemoteSectionView.swift */; };
+		21C3047C2E587564002ECB51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21C3047B2E587564002ECB51 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +51,35 @@
 		210A06A12DCCDA290036D542 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		210A06A32DCCDA2D0036D542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		210A06A62DCCDA2D0036D542 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		210A06AD2DCCDA670036D542 /* ForcastFitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastFitView.swift; sourceTree = "<group>"; };
+		210A06AF2DCCDA900036D542 /* SuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionView.swift; sourceTree = "<group>"; };
+		210A06B12DCE23C00036D542 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		210A06B32DCE24030036D542 /* OpenAiWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAiWeather.swift; sourceTree = "<group>"; };
+		210A06B52DD208F40036D542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		212DFC0F2E44BEC8008FFEF7 /* DressCastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DressCastView.swift; sourceTree = "<group>"; };
+		2142FA672E40C5D900CA79EB /* OutfitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutfitService.swift; sourceTree = "<group>"; };
+		2142FA692E40C93400CA79EB /* FreeWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeWeatherService.swift; sourceTree = "<group>"; };
+		2142FA6B2E421D1C00CA79EB /* SeedGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedGenerator.swift; sourceTree = "<group>"; };
+		215BC3482E65B2460077CF37 /* BannerAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdView.swift; sourceTree = "<group>"; };
+		2160E2D62E435C2C0067730C /* PreferenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceModel.swift; sourceTree = "<group>"; };
+		2160E2D82E435C550067730C /* OnBoardigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardigView.swift; sourceTree = "<group>"; };
+		2160E2DA2E4361030067730C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		21BDCBA22DD7536000B3BF39 /* LocationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewModel.swift; sourceTree = "<group>"; };
+		21BDCBA42DD7539100B3BF39 /* LocationSearchSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchSheet.swift; sourceTree = "<group>"; };
+		21BDCBA62DD75B7300B3BF39 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		21C304582E4A01F8002ECB51 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		21C3045A2E4A265A002ECB51 /* ShareableForcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareableForcastView.swift; sourceTree = "<group>"; };
+		21C3045C2E4B5D20002ECB51 /* ShareOutfitStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareOutfitStoryView.swift; sourceTree = "<group>"; };
+		21C3045E2E4CA198002ECB51 /* BrandColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandColors.swift; sourceTree = "<group>"; };
+		21C304622E54972A002ECB51 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		21C304642E5502EE002ECB51 /* ShopItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemView.swift; sourceTree = "<group>"; };
+		21C304662E55E32B002ECB51 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		21C304682E55E389002ECB51 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		21C3046A2E55E3C1002ECB51 /* ShopTheLookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTheLookViewModel.swift; sourceTree = "<group>"; };
+		21C3046C2E55E40E002ECB51 /* RemoteShopCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteShopCardView.swift; sourceTree = "<group>"; };
+		21C3046E2E55E44B002ECB51 /* ShopTheLookRemoteSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTheLookRemoteSectionView.swift; sourceTree = "<group>"; };
+		21C3047B2E587564002ECB51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		21C3047D2E587763002ECB51 /* import.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = import.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +87,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				212DB56E2E5DD07E0081E9A8 /* FirebaseAuth in Frameworks */,
+				212DB5742E5DD07E0081E9A8 /* FirebaseStorage in Frameworks */,
+				212DB5772E5DD3470081E9A8 /* GoogleMobileAds in Frameworks */,
+				212DB5702E5DD07E0081E9A8 /* FirebaseFirestore in Frameworks */,
+				212DB5722E5DD07E0081E9A8 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +101,9 @@
 		210A06932DCCDA290036D542 = {
 			isa = PBXGroup;
 			children = (
+				21C3047D2E587763002ECB51 /* import.json */,
+				2142FA692E40C93400CA79EB /* FreeWeatherService.swift */,
+				21BDCBA42DD7539100B3BF39 /* LocationSearchSheet.swift */,
 				210A069E2DCCDA290036D542 /* WeatherApp */,
 				210A069D2DCCDA290036D542 /* Products */,
 			);
@@ -51,10 +120,36 @@
 		210A069E2DCCDA290036D542 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				21C3047B2E587564002ECB51 /* GoogleService-Info.plist */,
+				210A06B52DD208F40036D542 /* Info.plist */,
+				21C3046A2E55E3C1002ECB51 /* ShopTheLookViewModel.swift */,
+				2160E2D62E435C2C0067730C /* PreferenceModel.swift */,
 				210A069F2DCCDA290036D542 /* WeatherAppApp.swift */,
+				210A06AF2DCCDA900036D542 /* SuggestionView.swift */,
+				2160E2DA2E4361030067730C /* SettingsView.swift */,
 				210A06A12DCCDA290036D542 /* ContentView.swift */,
 				210A06A32DCCDA2D0036D542 /* Assets.xcassets */,
 				210A06A52DCCDA2D0036D542 /* Preview Content */,
+				210A06AD2DCCDA670036D542 /* ForcastFitView.swift */,
+				210A06B12DCE23C00036D542 /* LocationManager.swift */,
+				210A06B32DCE24030036D542 /* OpenAiWeather.swift */,
+				21BDCBA22DD7536000B3BF39 /* LocationSearchViewModel.swift */,
+				21BDCBA62DD75B7300B3BF39 /* WeatherService.swift */,
+				2142FA672E40C5D900CA79EB /* OutfitService.swift */,
+				2142FA6B2E421D1C00CA79EB /* SeedGenerator.swift */,
+				2160E2D82E435C550067730C /* OnBoardigView.swift */,
+				212DFC0F2E44BEC8008FFEF7 /* DressCastView.swift */,
+				21C304582E4A01F8002ECB51 /* ShareSheet.swift */,
+				21C3045A2E4A265A002ECB51 /* ShareableForcastView.swift */,
+				21C3045C2E4B5D20002ECB51 /* ShareOutfitStoryView.swift */,
+				21C3045E2E4CA198002ECB51 /* BrandColors.swift */,
+				21C304622E54972A002ECB51 /* Service.swift */,
+				21C304642E5502EE002ECB51 /* ShopItemView.swift */,
+				21C304662E55E32B002ECB51 /* Models.swift */,
+				21C304682E55E389002ECB51 /* FirestoreService.swift */,
+				21C3046C2E55E40E002ECB51 /* RemoteShopCardView.swift */,
+				21C3046E2E55E44B002ECB51 /* ShopTheLookRemoteSectionView.swift */,
+				215BC3482E65B2460077CF37 /* BannerAdView.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -83,6 +178,13 @@
 			dependencies = (
 			);
 			name = WeatherApp;
+			packageProductDependencies = (
+				212DB56D2E5DD07E0081E9A8 /* FirebaseAuth */,
+				212DB56F2E5DD07E0081E9A8 /* FirebaseFirestore */,
+				212DB5712E5DD07E0081E9A8 /* FirebaseFirestoreSwift */,
+				212DB5732E5DD07E0081E9A8 /* FirebaseStorage */,
+				212DB5762E5DD3470081E9A8 /* GoogleMobileAds */,
+			);
 			productName = WeatherApp;
 			productReference = 210A069C2DCCDA290036D542 /* WeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +213,10 @@
 				Base,
 			);
 			mainGroup = 210A06932DCCDA290036D542;
+			packageReferences = (
+				212DB56C2E5DD07E0081E9A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				212DB5752E5DD3470081E9A8 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = 210A069D2DCCDA290036D542 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +233,7 @@
 			files = (
 				210A06A72DCCDA2D0036D542 /* Preview Assets.xcassets in Resources */,
 				210A06A42DCCDA2D0036D542 /* Assets.xcassets in Resources */,
+				21C3047C2E587564002ECB51 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +244,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2160E2DB2E4361030067730C /* SettingsView.swift in Sources */,
+				2142FA682E40C5D900CA79EB /* OutfitService.swift in Sources */,
 				210A06A22DCCDA290036D542 /* ContentView.swift in Sources */,
+				215BC3492E65B2460077CF37 /* BannerAdView.swift in Sources */,
+				21BDCBA72DD75B7300B3BF39 /* WeatherService.swift in Sources */,
+				21C304592E4A01F8002ECB51 /* ShareSheet.swift in Sources */,
 				210A06A02DCCDA290036D542 /* WeatherAppApp.swift in Sources */,
+				21C3046B2E55E3C1002ECB51 /* ShopTheLookViewModel.swift in Sources */,
+				212DFC102E44BEC8008FFEF7 /* DressCastView.swift in Sources */,
+				21C3046D2E55E40E002ECB51 /* RemoteShopCardView.swift in Sources */,
+				21C304652E5502EE002ECB51 /* ShopItemView.swift in Sources */,
+				210A06B42DCE24030036D542 /* OpenAiWeather.swift in Sources */,
+				21C3046F2E55E44B002ECB51 /* ShopTheLookRemoteSectionView.swift in Sources */,
+				21C304632E54972A002ECB51 /* Service.swift in Sources */,
+				210A06B22DCE23C00036D542 /* LocationManager.swift in Sources */,
+				21C304672E55E32B002ECB51 /* Models.swift in Sources */,
+				21C3045F2E4CA198002ECB51 /* BrandColors.swift in Sources */,
+				21C304692E55E389002ECB51 /* FirestoreService.swift in Sources */,
+				21BDCBA52DD7539100B3BF39 /* LocationSearchSheet.swift in Sources */,
+				21BDCBA32DD7536000B3BF39 /* LocationSearchViewModel.swift in Sources */,
+				2160E2D72E435C2D0067730C /* PreferenceModel.swift in Sources */,
+				2142FA6A2E40C93400CA79EB /* FreeWeatherService.swift in Sources */,
+				21C3045B2E4A265A002ECB51 /* ShareableForcastView.swift in Sources */,
+				2160E2D92E435C550067730C /* OnBoardigView.swift in Sources */,
+				210A06B02DCCDA900036D542 /* SuggestionView.swift in Sources */,
+				2142FA6C2E421D1C00CA79EB /* SeedGenerator.swift in Sources */,
+				21C3045D2E4B5D20002ECB51 /* ShareOutfitStoryView.swift in Sources */,
+				210A06AE2DCCDA670036D542 /* ForcastFitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +403,11 @@
 				DEVELOPMENT_TEAM = MMT223WF9Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We use your location to suggest what to wear today!";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "we use your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +437,11 @@
 				DEVELOPMENT_TEAM = MMT223WF9Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We use your location to suggest what to wear today!";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "we use your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +482,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		212DB56C2E5DD07E0081E9A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.29.0;
+			};
+		};
+		212DB5752E5DD3470081E9A8 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		212DB56D2E5DD07E0081E9A8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 212DB56C2E5DD07E0081E9A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		212DB56F2E5DD07E0081E9A8 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 212DB56C2E5DD07E0081E9A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		212DB5712E5DD07E0081E9A8 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 212DB56C2E5DD07E0081E9A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		212DB5732E5DD07E0081E9A8 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 212DB56C2E5DD07E0081E9A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		212DB5762E5DD3470081E9A8 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 212DB5752E5DD3470081E9A8 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 210A06942DCCDA290036D542 /* Project object */;
 }
