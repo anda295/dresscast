@@ -19,7 +19,6 @@
 		212DB5702E5DD07E0081E9A8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 212DB56F2E5DD07E0081E9A8 /* FirebaseFirestore */; };
 		212DB5722E5DD07E0081E9A8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 212DB5712E5DD07E0081E9A8 /* FirebaseFirestoreSwift */; };
 		212DB5742E5DD07E0081E9A8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 212DB5732E5DD07E0081E9A8 /* FirebaseStorage */; };
-		212DB5772E5DD3470081E9A8 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 212DB5762E5DD3470081E9A8 /* GoogleMobileAds */; };
 		212DFC102E44BEC8008FFEF7 /* DressCastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212DFC0F2E44BEC8008FFEF7 /* DressCastView.swift */; };
 		2142FA682E40C5D900CA79EB /* OutfitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2142FA672E40C5D900CA79EB /* OutfitService.swift */; };
 		2142FA6A2E40C93400CA79EB /* FreeWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2142FA692E40C93400CA79EB /* FreeWeatherService.swift */; };
@@ -43,6 +42,7 @@
 		21C3046D2E55E40E002ECB51 /* RemoteShopCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C3046C2E55E40E002ECB51 /* RemoteShopCardView.swift */; };
 		21C3046F2E55E44B002ECB51 /* ShopTheLookRemoteSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C3046E2E55E44B002ECB51 /* ShopTheLookRemoteSectionView.swift */; };
 		21C3047C2E587564002ECB51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21C3047B2E587564002ECB51 /* GoogleService-Info.plist */; };
+		21DFA62E2E66FDA30070BA33 /* ForecastFitVm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DFA62D2E66FDA20070BA33 /* ForecastFitVm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +80,7 @@
 		21C3046E2E55E44B002ECB51 /* ShopTheLookRemoteSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTheLookRemoteSectionView.swift; sourceTree = "<group>"; };
 		21C3047B2E587564002ECB51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		21C3047D2E587763002ECB51 /* import.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = import.json; sourceTree = "<group>"; };
+		21DFA62D2E66FDA20070BA33 /* ForecastFitVm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastFitVm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +90,6 @@
 			files = (
 				212DB56E2E5DD07E0081E9A8 /* FirebaseAuth in Frameworks */,
 				212DB5742E5DD07E0081E9A8 /* FirebaseStorage in Frameworks */,
-				212DB5772E5DD3470081E9A8 /* GoogleMobileAds in Frameworks */,
 				212DB5702E5DD07E0081E9A8 /* FirebaseFirestore in Frameworks */,
 				212DB5722E5DD07E0081E9A8 /* FirebaseFirestoreSwift in Frameworks */,
 			);
@@ -150,6 +150,7 @@
 				21C3046C2E55E40E002ECB51 /* RemoteShopCardView.swift */,
 				21C3046E2E55E44B002ECB51 /* ShopTheLookRemoteSectionView.swift */,
 				215BC3482E65B2460077CF37 /* BannerAdView.swift */,
+				21DFA62D2E66FDA20070BA33 /* ForecastFitVm.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -183,7 +184,6 @@
 				212DB56F2E5DD07E0081E9A8 /* FirebaseFirestore */,
 				212DB5712E5DD07E0081E9A8 /* FirebaseFirestoreSwift */,
 				212DB5732E5DD07E0081E9A8 /* FirebaseStorage */,
-				212DB5762E5DD3470081E9A8 /* GoogleMobileAds */,
 			);
 			productName = WeatherApp;
 			productReference = 210A069C2DCCDA290036D542 /* WeatherApp.app */;
@@ -215,7 +215,6 @@
 			mainGroup = 210A06932DCCDA290036D542;
 			packageReferences = (
 				212DB56C2E5DD07E0081E9A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				212DB5752E5DD3470081E9A8 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			productRefGroup = 210A069D2DCCDA290036D542 /* Products */;
 			projectDirPath = "";
@@ -255,6 +254,7 @@
 				212DFC102E44BEC8008FFEF7 /* DressCastView.swift in Sources */,
 				21C3046D2E55E40E002ECB51 /* RemoteShopCardView.swift in Sources */,
 				21C304652E5502EE002ECB51 /* ShopItemView.swift in Sources */,
+				21DFA62E2E66FDA30070BA33 /* ForecastFitVm.swift in Sources */,
 				210A06B42DCE24030036D542 /* OpenAiWeather.swift in Sources */,
 				21C3046F2E55E44B002ECB51 /* ShopTheLookRemoteSectionView.swift in Sources */,
 				21C304632E54972A002ECB51 /* Service.swift in Sources */,
@@ -492,14 +492,6 @@
 				version = 10.29.0;
 			};
 		};
-		212DB5752E5DD3470081E9A8 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 12.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -522,11 +514,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 212DB56C2E5DD07E0081E9A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
-		};
-		212DB5762E5DD3470081E9A8 /* GoogleMobileAds */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 212DB5752E5DD3470081E9A8 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
-			productName = GoogleMobileAds;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

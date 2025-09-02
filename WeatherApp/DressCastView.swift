@@ -5,10 +5,10 @@
 
 import SwiftUI
 
-
+// Simple image view that just renders the URL
 struct OutfitIllustrationView: View {
-    var imageName: String
-    var opacity: Double
+    let imageUrlString: String
+    let opacity: Double
 
     var body: some View {
         ZStack {
@@ -16,21 +16,37 @@ struct OutfitIllustrationView: View {
                 .fill(Color(UIColor.systemGray6))
                 .frame(maxWidth: .infinity)
                 .frame(height: 300)
-
-            Image(imageName)
-                .resizable()
-                .scaledToFit()
-                .frame(height: 260)
-                .opacity(opacity)
+                .padding(.leading,20)
+                .padding(.trailing,20)
+            if let url = URL(string: imageUrlString) {
+                AsyncImage(url: url) { phase in
+                    switch phase {
+                    case .empty:
+                        ProgressView().frame(height: 260)
+                    case .success(let image):
+                        image.resizable().scaledToFit()
+                            .frame(height: 260)
+                            .opacity(opacity)
+                    case .failure(_):
+                        Image(systemName: "photo")
+                            .resizable().scaledToFit()
+                            .frame(height: 260)
+                            .foregroundColor(.secondary)
+                            .opacity(opacity)
+                    @unknown default:
+                        EmptyView()
+                    }
+                }
+            }
         }
-        .padding(.horizontal)
     }
 }
+
 struct QuickTipsView: View {
     var tips: [ String]
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading) {
             Text("Quick Tips")
                 .font(.headline)
                 .foregroundColor(.primary)
@@ -47,6 +63,9 @@ struct QuickTipsView: View {
         .background(Color(UIColor.systemGray6))
         .cornerRadius(20)
         .padding(.horizontal)
+        .frame(maxWidth: .infinity)
+        .padding(.leading,20)
+        .padding(.trailing,20)
     }
 }
 
@@ -72,6 +91,8 @@ struct WeatherHeaderView: View {
         }
         .padding(.horizontal)
         .padding(.top)
+        .padding(.leading,10)
+        .padding(.trailing,10)
     }
 }
 struct OutfitHeadlineView: View {
@@ -87,6 +108,6 @@ struct OutfitHeadlineView: View {
                 .foregroundColor(.primary)
                 .fixedSize(horizontal: false, vertical: true)
                 .multilineTextAlignment(.leading)
-        }
+        }.padding(.leading,10).padding(.trailing,10)
     }
 }

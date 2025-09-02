@@ -177,14 +177,14 @@ struct ContentView: View {
            let preferredStyle      = BroadStyle(rawValue: style) ?? .casual
            let gender      = Gender(rawValue: gender) ?? .female
            let description = generateOutfitText(for: weather,coldProfile: userColdProfile,gender:gender, style:preferredStyle)
-           var fullString = description.subheadline
+           let fullString = description.subheadline
            var icon = ""
            var text = ""
            if let firstSpaceIndex = fullString.firstIndex(where: { $0.isWhitespace }) {
                 icon = String(fullString[..<firstSpaceIndex])
                 text = fullString[firstSpaceIndex...].trimmingCharacters(in: .whitespaces)
            }
-                        var details = OutfitDetails(title: description.headline, shortWeatherInfo: text, fashionType: description.imageName, tips: description.tips,temperature: description.temperature,weatherIcon: icon,
+           let details = OutfitDetails(title: description.headline, shortWeatherInfo: text, fashionType: description.imageName, tips: description.tips,temperature: description.temperature,weatherIcon: icon,
                                                     theme:description.themeForShare)
            DispatchQueue.main.async {
                self.outfit  = details

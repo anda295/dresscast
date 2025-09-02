@@ -15,7 +15,6 @@ final class ShopService {
     /// Fetch shop items for an illustration name (imageName)
     func fetchShopItems(for imageName: String) async throws -> [ShopItem] {
         let base = db.collection("outfits").document(imageName)
-        print(base.description)
         let snap = try await base.collection("shopItems")
             .order(by: "sort", descending: false)
             .getDocuments()

@@ -7,7 +7,6 @@
 
 import SwiftUI
 import FirebaseCore
-import GoogleMobileAds
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
@@ -19,9 +18,9 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct WeatherAppApp: App {
-    init() {
-        MobileAds.shared.start(completionHandler: nil)
-      }
+//    init() {
+//        MobileAds.shared.start(completionHandler: nil)
+//      }
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @AppStorage("didOnboard") private var didOnboard = false
      var body: some Scene {

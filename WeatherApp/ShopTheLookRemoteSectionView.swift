@@ -1,17 +1,9 @@
-//
-//  ShopTheLookRemoteSectionView.swift
-//  WeatherApp
-//
-//  Created by Alin Postolache on 20.08.2025.
-//
 
 import SwiftUI
-
 struct ShopTheLookRemoteSection: View {
-    @StateObject private var vm = ShopTheLookViewModel()
-    let illustrationName: String
+    @ObservedObject var vm: ForecastFitVM
     var onSeeAll: (() -> Void)? = nil
-    var fallback: [ShopItem] = []   // optional local defaults
+    var fallback: [ShopItem] = []
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -25,7 +17,9 @@ struct ShopTheLookRemoteSection: View {
                 if let onSeeAll {
                     Button(action: onSeeAll) {
                         Image(systemName: "chevron.right").font(.system(size: 15, weight: .semibold))
-                    }.buttonStyle(.plain)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("See all")
                 }
             }
             .padding(.horizontal)
@@ -33,7 +27,7 @@ struct ShopTheLookRemoteSection: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 14) {
                     if vm.isLoading {
-                        ForEach(0..<4) { _ in
+                        ForEach(0..<4, id: \.self) { _ in
                             RoundedRectangle(cornerRadius: 18)
                                 .fill(Color(UIColor.systemGray6))
                                 .frame(width: 80, height: 80)
@@ -44,7 +38,6 @@ struct ShopTheLookRemoteSection: View {
                             RemoteShopCard(item: item)
                         }
                     } else {
-                        // fallback (optional)
                         ForEach(fallback) { item in
                             RemoteShopCard(item: item)
                         }
@@ -53,8 +46,6 @@ struct ShopTheLookRemoteSection: View {
                 .padding(.horizontal)
             }
         }
-        .onAppear { vm.load(imageName: illustrationName) }
-        .onChange(of: illustrationName) { new in vm.load(imageName: new) }
         .padding(.top, 4)
     }
 }

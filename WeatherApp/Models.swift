@@ -21,6 +21,7 @@ struct ShopItemDTO: Codable, Identifiable {
 struct OutfitDoc: Codable {
     let title: String?
     let updatedAt: Date?
+    let imgUrl: String?
 }
 
 

@@ -1,5 +1,4 @@
 import SwiftUI
-import GoogleMobileAds
 
 struct ForecastFitView: View {
     var outfitTitle : String
@@ -8,6 +7,7 @@ struct ForecastFitView: View {
     var tips:[String]
     var icon : String
     var temperature : Int
+    @StateObject private var vm = ForecastFitVM()
 
     // demo data
     var shopItems: [ShopItem1] = [
@@ -34,34 +34,28 @@ struct ForecastFitView: View {
                         )
                         
                         OutfitHeadlineView(icon: "", text: outfitTitle)
+                       OutfitIllustrationView(imageUrlString: vm.imgUrl, opacity: 0.9)
                         
-                        OutfitIllustrationView(imageName: outfitName, opacity: 0.9)
-                                                ShopTheLookRemoteSection(
-                            illustrationName: outfitName,
-                            onSeeAll: {
-                                // push a grid with all items for this illustration
-                            },
-                            fallback: []
-                        )
+                        ShopTheLookRemoteSection(vm: vm) // inject shared VM
                         
-                        QuickTipsView(tips: tips)
+                        QuickTipsView(tips: tips).frame(width: geo.size.width)
                         
                         Spacer(minLength: 24) // bottom breathing room
-                    }
-                    // unified safe margins
+                    }   // unified safe margins
                     // .padding(.horizontal, 16)
                     //.padding(.top, 8) // additional top offset if you want a bit more space
-                    BannerAdView(
-                        adUnitId: "ca-app-pub-3940256099942544/2934735716", // TEST iOS banner
-                        width: geo.size.width
-                    )
-                    .background(Color(.systemBackground))
+//                    BannerAdView(
+//                        adUnitId: "ca-app-pub-3940256099942544/2934735716", // TEST iOS banner
+//                        width: geo.size.width
+//                    )
+//                    .background(Color(.systemBackground))
 
                 }
                 .scrollIndicators(.hidden)
                 .ignoresSafeArea(.keyboard) // keep layout steady when keyboard appears
-                // In iOS 17+, you could use this instead of manual horizontal padding:
-                // .contentMargins(.horizontal, 16, for: .scrollContent)
+            
+            }.task(id: outfitName) {
+                vm.loadAll(imageName: outfitName)
             }
         }
     }
