@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     @State private var shareImage: UIImage?
     @State private var showShare = false
@@ -15,12 +16,12 @@ struct ContentView: View {
 
     @State private var showSettings = false
 
-    @StateObject private var locationVM :LocationPickerViewModel
+    @StateObject private var locationVM : LocationPickerViewModel
    @State private var outfit: OutfitDetails?
    @State private var loading = true
    @State private var error: String?
     @State private var showSearch = false
-    @State private var lastFetchedLocation: LocationOption?
+    @State private var lastFetchedLocation : LocationOption?
     @AppStorage("pref_gender") private var gender  = ""
     @AppStorage("pref_cold") private var coldRaw = ""
     @AppStorage("pref_style")  private var style   = ""
