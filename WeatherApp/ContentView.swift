@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var shareImage: UIImage?
     @State private var showShare = false
-    @StateObject private var locationManager = LocationManager()
+    @StateObject private var locationManager : LocationManager
     @State private var sharePayload: SharePayload?
 
     @State private var showSettings = false

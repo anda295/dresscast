@@ -43,6 +43,8 @@
 		21C3046F2E55E44B002ECB51 /* ShopTheLookRemoteSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C3046E2E55E44B002ECB51 /* ShopTheLookRemoteSectionView.swift */; };
 		21C3047C2E587564002ECB51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21C3047B2E587564002ECB51 /* GoogleService-Info.plist */; };
 		21DFA62E2E66FDA30070BA33 /* ForecastFitVm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DFA62D2E66FDA20070BA33 /* ForecastFitVm.swift */; };
+		C758B3B12E7982CA0002A106 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = C758B3B02E7982CA0002A106 /* GoogleMobileAds */; };
+		C758B3B42E79836B0002A106 /* GoogleUserMessagingPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = C758B3B32E79836B0002A106 /* GoogleUserMessagingPlatform */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,7 +92,9 @@
 			files = (
 				212DB56E2E5DD07E0081E9A8 /* FirebaseAuth in Frameworks */,
 				212DB5742E5DD07E0081E9A8 /* FirebaseStorage in Frameworks */,
+				C758B3B12E7982CA0002A106 /* GoogleMobileAds in Frameworks */,
 				212DB5702E5DD07E0081E9A8 /* FirebaseFirestore in Frameworks */,
+				C758B3B42E79836B0002A106 /* GoogleUserMessagingPlatform in Frameworks */,
 				212DB5722E5DD07E0081E9A8 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +188,8 @@
 				212DB56F2E5DD07E0081E9A8 /* FirebaseFirestore */,
 				212DB5712E5DD07E0081E9A8 /* FirebaseFirestoreSwift */,
 				212DB5732E5DD07E0081E9A8 /* FirebaseStorage */,
+				C758B3B02E7982CA0002A106 /* GoogleMobileAds */,
+				C758B3B32E79836B0002A106 /* GoogleUserMessagingPlatform */,
 			);
 			productName = WeatherApp;
 			productReference = 210A069C2DCCDA290036D542 /* WeatherApp.app */;
@@ -215,6 +221,8 @@
 			mainGroup = 210A06932DCCDA290036D542;
 			packageReferences = (
 				212DB56C2E5DD07E0081E9A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C758B3AF2E7982CA0002A106 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				C758B3B22E79836B0002A106 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */,
 			);
 			productRefGroup = 210A069D2DCCDA290036D542 /* Products */;
 			projectDirPath = "";
@@ -494,6 +502,22 @@
 				version = 10.29.0;
 			};
 		};
+		C758B3AF2E7982CA0002A106 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.11.0;
+			};
+		};
+		C758B3B22E79836B0002A106 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-user-messaging-platform";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -516,6 +540,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 212DB56C2E5DD07E0081E9A8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		C758B3B02E7982CA0002A106 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C758B3AF2E7982CA0002A106 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+		C758B3B32E79836B0002A106 /* GoogleUserMessagingPlatform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C758B3B22E79836B0002A106 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */;
+			productName = GoogleUserMessagingPlatform;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

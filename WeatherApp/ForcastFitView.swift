@@ -44,10 +44,11 @@ struct ForecastFitView: View {
                     }   // unified safe margins
                     // .padding(.horizontal, 16)
                     //.padding(.top, 8) // additional top offset if you want a bit more space
-//                    BannerAdView(
-//                        adUnitId: "ca-app-pub-3940256099942544/2934735716", // TEST iOS banner
-//                        width: geo.size.width
-//                    )
+                    BannerAdView(
+                                        adUnitId: "ca-app-pub-3940256099942544/2934735716",
+                                        width: geo.size.width - 32
+                                    )
+                                    .padding(.horizontal, 16)
 //                    .background(Color(.systemBackground))
 
                 }
