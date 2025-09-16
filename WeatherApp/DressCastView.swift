@@ -49,13 +49,13 @@ struct QuickTipsView: View {
         VStack(alignment: .leading) {
             Text("Quick Tips")
                 .font(.headline)
-                .foregroundColor(.primary)
+                .foregroundColor(.primary).padding(.bottom,20)
 
             ForEach(tips, id: \.self) {  tip in
                 HStack(alignment: .top, spacing: 10) {
                    // Text(emoji)
                     Text(tip)
-                        .font(.body)
+                        .font(.body).frame(maxWidth: .infinity,alignment: .leading).padding(.bottom,5)
                 }
             }
         }
@@ -64,8 +64,8 @@ struct QuickTipsView: View {
         .cornerRadius(20)
         .padding(.horizontal)
         .frame(maxWidth: .infinity)
-        .padding(.leading,20)
-        .padding(.trailing,20)
+//        .padding(.leading,20)
+//        .padding(.trailing,20)
     }
 }
 

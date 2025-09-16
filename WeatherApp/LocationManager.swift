@@ -7,33 +7,64 @@
 
 import CoreLocation
 import Combine
+
 @MainActor
-class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
+final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     private let manager = CLLocationManager()
-    
+
     @Published var location: CLLocation?
-    
+    @Published var authStatus: CLAuthorizationStatus = .notDetermined
+    @Published var errorMessage: String?
+
     override init() {
         super.init()
         manager.delegate = self
-        manager.desiredAccuracy = kCLLocationAccuracyHundredMeters   // battery-friendly
-        manager.requestWhenInUseAuthorization()
-        manager.requestLocation()   // 👉 only one callback, then it stops
+        manager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        manager.requestWhenInUseAuthorization() // just request here; don't requestLocation yet
     }
 
-    // Called once (maybe twice if GPS refines the fix)
-    func locationManager(_ manager: CLLocationManager,
-                         didUpdateLocations locations: [CLLocation]) {
-        location = locations.first
-        print("location1")
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+            authStatus = manager.authorizationStatus
+            switch authStatus {
+            case .authorizedWhenInUse, .authorizedAlways:
+                manager.requestLocation() // now it’s safe
+            case .denied, .restricted:
+                errorMessage = "Location permission denied. Enable it in Settings."
+            case .notDetermined:
+                break
+            @unknown default:
+                break
+            }
+        }
+
+        // iOS 13 and earlier fallback (harmless to keep)
+        func locationManager(_ manager: CLLocationManager,
+                             didChangeAuthorization status: CLAuthorizationStatus) {
+            locationManagerDidChangeAuthorization(manager)
+        }
+
+        func locationManager(_ manager: CLLocationManager,
+                             didUpdateLocations locations: [CLLocation]) {
+            location = locations.first
+            // Optional: request again later if needed
+        }
+
+        func locationManager(_ manager: CLLocationManager,
+                             didFailWithError error: Error) {
+            errorMessage = error.localizedDescription
+            
+            print(error)
+            // If you get CLError.denied here, it's because requestLocation happened pre-auth.
+        }
     }
 
-    func locationManager(_ manager: CLLocationManager,
-                         didFailWithError error: Error) {
-        print("Location error:", error.localizedDescription)
-    }
 
-}
+
+
+
+
+
+
 import CoreLocation
 import SwiftUI
 import Combine
